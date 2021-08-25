@@ -1,28 +1,29 @@
-import React from 'react'
-import {Navbar,Container,Nav,NavDropdown} from 'react-bootstrap'
+import React from "react";
+import "./Navbar.css";
+import logo from "../assets/socccerhlogo.png";
 
-function Navigator() {
-    return (
-        <Navbar bg="dark" expand="lg">
-  <Container>
-    <Navbar.Brand href="#home">Soccer-Highlights</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#link">Link</Nav.Link>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
-    )
+function Navbar() {
+  return (
+    <div className="navbar-styling">
+      <img className="logo-img" src={logo} />
+      <nav>
+        <ul className="nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Faqs</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="cta" href="#">
+        <button>Contact</button>
+      </a>
+    </div>
+  );
 }
 
-export default Navigator
+export default Navbar;
