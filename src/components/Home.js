@@ -23,13 +23,16 @@ function Home() {
   return (
     <main className="container-fluid">
       <div className="spinner">
-        <Spinner />
+        <Spinner loading={loading} />
+      </div>
+      <div className="text-center">
+        <h1>Latest Matches</h1>
       </div>
       <div className="row">
-        {highlights.map((highlight, index) => {
+        {highlights.map((highlight) => {
           return (
             <Highlight
-              key={index}
+              key={highlight.title}
               highlight={highlight}
               extractUrl={extractUrl}
             />

@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div className="navbar-styling">
       <Link to="/">
-        <img className="logo-img" src={logo} />
+        <img className="logo-img" src={logo} alt="logo" />
       </Link>
       <nav>
         <ul className="nav-links">
@@ -18,7 +18,7 @@ function Navbar() {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="#">Faqs</a>
+            <Link to="/">Faqs</Link>
           </li>
         </ul>
       </nav>

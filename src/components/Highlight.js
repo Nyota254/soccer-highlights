@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Highlight({ highlight, extractUrl }) {
+function Highlight({ highlight }) {
   return (
     <div className="col-md-4">
       <div className="card">
@@ -26,6 +27,12 @@ function Highlight({ highlight, extractUrl }) {
           <a href={highlight.matchviewUrl} className="btn btn-primary">
             View Highlights
           </a>
+          <Link
+            to={`/singlematch/${highlight.title}`}
+            className="btn btn-primary"
+          >
+            View Details
+          </Link>
         </div>
       </div>
     </div>
