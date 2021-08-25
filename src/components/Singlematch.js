@@ -1,11 +1,11 @@
 import React from "react";
 
-function Contact() {
+function Singlematch() {
   return (
     <div className="container">
-      <h1>Contact Us</h1>
+      <p>Singlepage</p>
     </div>
   );
 }
 
-export default Contact;
+export default Singlematch;

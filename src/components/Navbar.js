@@ -1,27 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/socccerhlogo.png";
 
 function Navbar() {
   return (
     <div className="navbar-styling">
-      <img className="logo-img" src={logo} />
+      <Link to="/">
+        <img className="logo-img" src={logo} />
+      </Link>
       <nav>
         <ul className="nav-links">
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <a href="#">Faqs</a>
           </li>
         </ul>
       </nav>
-      <a class="cta" href="#">
+      <Link to="/contact">
         <button>Contact</button>
-      </a>
+      </Link>
     </div>
   );
 }
