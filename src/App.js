@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 import Contact from "./pages/Contact";
 import Singlematch from "./components/Singlematch";
+import MatchesCalender from "./pages/MatchesCalender";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/matches-calender">
+          <MatchesCalender />
         </Route>
         <Route path="/singlematch/:title">
           <Singlematch />
