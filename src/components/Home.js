@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Highlight from "./Highlight";
+import Leaguesnav from "./Leaguesnav";
 import { extractUrl } from "../components/Utils";
 import Spinner from "../components/Spinner";
 import "../App.css";
@@ -25,8 +26,9 @@ function Home() {
       <div className="spinner">
         <Spinner loading={loading} />
       </div>
+      <Leaguesnav highlights={highlights} />
       <div className="text-center">
-        <h1>Latest Matches</h1>
+        <h1>All Matches</h1>
       </div>
       <div className="row">
         {highlights.map((highlight) => {
