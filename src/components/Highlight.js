@@ -24,9 +24,9 @@ function Highlight({ highlight }) {
         <div className="card-body">
           <h5 className="card-title">Match:{highlight.title}</h5>
           <p className="card-text">Competition: {highlight.competition}</p>
-          <a href={highlight.matchviewUrl} className="btn btn-primary">
+          {/* <a href={highlight.matchviewUrl} className="btn btn-primary">
             View Highlights
-          </a>
+          </a> */}
           <Link
             to={`/singlematch/${highlight.title}`}
             className="btn btn-primary"
